@@ -99,6 +99,15 @@ header {
     backdrop-filter: blur(5px);
 }
 
+.project-gallery iframe {
+    width: 100vw;
+    max-height: 80vh;
+    height: 80vh;
+    display: block;
+    margin: 40px 0;
+    border: none;
+}
+
 .logo {
     color: rgb(255, 255, 255);
     font-size: 13px;
