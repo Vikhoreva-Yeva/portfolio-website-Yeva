@@ -283,22 +283,14 @@ nav a:hover {
     border: 1px solid transparent;
 }
 
-.tag:hover {
-    background: white; /* White background on hover */
-    color: black; /* Black text on hover */
-    border: 1px solid white;
-    transform: translateX(5px); /* Slide right */
-}
 
-/* Alternative hover effect - uncomment if you prefer this */
-/*
 .tag:hover {
     background: transparent;
     color: white;
     border: 1px solid white;
     transform: scale(1.1);
 }
-*/
+
 
 .about-section {
     position: relative;
