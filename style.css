@@ -272,21 +272,33 @@ nav a:hover {
 .tag {
     color: white;
     font-size: 16px;
-    padding: 0;
-    background: transparent;
+    padding: 3px 8px;
+    background: rgba(0, 0, 0, 0.7); /* Dark background for better contrast */
     cursor: pointer;
     transition: all 0.3s;
     pointer-events: auto;
     letter-spacing: 0.5px;
-    text-decoration: underline;
+    text-decoration: none; /* Remove underline */
     font-weight: normal;
+    border: 1px solid transparent;
 }
 
 .tag:hover {
-    background: transparent;
-    color: #d70000;
-    transform: scale(1.05);
+    background: white; /* White background on hover */
+    color: black; /* Black text on hover */
+    border: 1px solid white;
+    transform: translateX(5px); /* Slide right */
 }
+
+/* Alternative hover effect - uncomment if you prefer this */
+/*
+.tag:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.1);
+}
+*/
 
 .about-section {
     position: relative;
