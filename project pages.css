@@ -71,7 +71,7 @@ header {
 .logo-dropdown a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: color 0.3s;
@@ -105,7 +105,7 @@ header {
     margin-left: auto;
 }
 
-/* Remove old nav styles */
+
 nav a {
     color: white;
     margin-left: 30px;
