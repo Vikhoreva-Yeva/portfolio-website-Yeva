@@ -16,17 +16,16 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto; /* Changed from 10px */
+    height: auto;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 9999;
-    background: rgba(0, 0, 0, 0.679);
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
 }
 
-/* Logo container with dropdown */
 .logo-container {
     position: absolute;
     left: 50%;
@@ -49,7 +48,6 @@ header {
     color: #d70000;
 }
 
-/* Dropdown menu */
 .logo-dropdown {
     position: absolute;
     top: 100%;
@@ -82,7 +80,6 @@ header {
     color: #d70000;
 }
 
-/* Navigation arrows */
 .nav-arrow {
     color: white;
     font-size: 30px;
@@ -104,21 +101,8 @@ header {
     margin-left: auto;
 }
 
-
-nav a {
-    color: white;
-    margin-left: 30px;
-    text-decoration: none;
-    font-size: 15px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #d70000;
-}
-
 .project-container {
-    padding-top: 80px; /* Increased to account for header */
+    padding-top: 80px;
 }
 
 .project-main-image {
@@ -169,6 +153,9 @@ nav a:hover {
     font-size: 14px;
     letter-spacing: 2px;
     cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid white;
+    transition: all 0.3s;
 }
 
 .contact-button:hover {
@@ -185,7 +172,8 @@ nav a:hover {
 
 .project-gallery img {
     width: 100vw;
-    height: 100%;
+    height: auto;
+    max-height: 90vh;
     object-fit: contain;
     display: block;
     margin: 20px 0;
@@ -210,11 +198,12 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-    .gallery-row {
-        grid-template-columns: 1fr;
-    }
-    
     .project-info {
         padding: 40px 5%;
+    }
+    
+    .nav-arrow {
+        font-size: 24px;
+        padding: 5px 10px;
     }
 }
