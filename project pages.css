@@ -16,7 +16,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 10px;
+    height: auto; /* Changed from 10px */
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -26,14 +26,86 @@ header {
     backdrop-filter: blur(5px);
 }
 
+/* Logo container with dropdown */
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .logo {
     color: white;
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 1px;
     text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: block;
+    text-align: center;
 }
 
+.logo:hover {
+    color: #d70000;
+}
+
+/* Dropdown menu */
+.logo-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 20px;
+    min-width: 150px;
+}
+
+.logo-container:hover .logo-dropdown {
+    display: flex;
+}
+
+.logo-dropdown a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.logo-dropdown a:hover {
+    color: #d70000;
+}
+
+/* Navigation arrows */
+.nav-arrow {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.nav-arrow:hover {
+    color: #d70000;
+    transform: scale(1.2);
+}
+
+.nav-arrow-left {
+    margin-right: auto;
+}
+
+.nav-arrow-right {
+    margin-left: auto;
+}
+
+/* Remove old nav styles */
 nav a {
     color: white;
     margin-left: 30px;
@@ -47,8 +119,7 @@ nav a:hover {
 }
 
 .project-container {
-    padding-top: 50px;
-
+    padding-top: 80px; /* Increased to account for header */
 }
 
 .project-main-image {
@@ -63,7 +134,6 @@ nav a:hover {
     object-fit: cover;
     display: block;
 }
-
 
 .project-info {
     background: black;
@@ -131,7 +201,14 @@ nav a:hover {
     background: black;
 }
 
-
+.project-gallery iframe {
+    width: 100vw;
+    max-height: 80vh;
+    height: 80vh;
+    display: block;
+    margin: 40px 0;
+    border: none;
+}
 
 @media (max-width: 768px) {
     .gallery-row {
