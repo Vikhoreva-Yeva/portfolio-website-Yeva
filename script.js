@@ -20,7 +20,7 @@ const wordImages = {
     'Analog works': 'Analog.webp',
     'Ethnography of self': './Dreams photos/DreamWriting.webp',
     'Typography': './Line font/H_YevaVikhorieva_23.webp',
-    'Culture/Ethno/Folk': './Sorochka/Sorochka1.webp',
+    'Culture/Ethno/Folk': './Sorochka/sorochka1.webp',
     'Researching': './Airflow/ProcessBookAir.webp',
     'Books': './Circle/circlebook prev.webp',
     'Digital media': 'Digital.webp'
