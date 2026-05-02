@@ -193,3 +193,9 @@ header {
         padding: 5px 10px;
     }
 }
+
+/* DEBUG - remove after testing */
+.dropdown-content {
+    display: block !important;
+    background: red !important;
+}
