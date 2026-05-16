@@ -157,7 +157,7 @@ header {
 
 .project-gallery img {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     object-fit: cover; /* Fills entire space, may crop */
     display: block;
     margin: 20px 0;
