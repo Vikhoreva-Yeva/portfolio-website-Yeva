@@ -204,7 +204,7 @@ nav a:hover {
 }
 
 .popup-project-item:hover {
-    text-shadow: 0 0 3px #ffffffdd;
+    text-shadow: 0 0 5px #ffffffdd;
     color: white;
 }
 
