@@ -291,20 +291,19 @@ document.querySelectorAll('.tag').forEach(tag => {
     });
 });
 
-// Test if GSAP works
-console.log('GSAP loaded:', typeof gsap);
-console.log('ScrollTrigger loaded:', typeof ScrollTrigger);
-
+// GSAP Scroll animations for projects
 gsap.registerPlugin(ScrollTrigger);
 
-// Simple test - fade in projects
-gsap.to('.project', {
-    duration: 1,
-    opacity: 0.5,
-    scrollTrigger: {
-        trigger: '.projects-section',
-        start: 'top center',
-        toggleActions: 'play none none reverse',
-        markers: true // Shows debug markers
-    }
+// Fade in project titles and images
+gsap.utils.toArray('.project').forEach((project) => {
+    gsap.from(project, {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        scrollTrigger: {
+            trigger: project,
+            start: 'top center',
+            toggleActions: 'play none none reverse'
+        }
+    });
 });
