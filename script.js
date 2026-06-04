@@ -290,3 +290,20 @@ document.querySelectorAll('.tag').forEach(tag => {
         }, 800);
     });
 });
+
+// GSAP Scroll animations for projects
+gsap.registerPlugin(ScrollTrigger);
+
+// Fade in project titles and images
+gsap.utils.toArray('.project').forEach((project) => {
+    gsap.from(project, {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        scrollTrigger: {
+            trigger: project,
+            start: 'top center',
+            toggleActions: 'play none none reverse'
+        }
+    });
+});
