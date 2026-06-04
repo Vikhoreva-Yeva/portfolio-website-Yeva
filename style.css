@@ -156,7 +156,6 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     padding: 40px 50px;
-    border: none; /* Remove or just change this line */
     width: 300px;
     position: relative;
     pointer-events: auto;
