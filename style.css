@@ -252,26 +252,15 @@ body {
     z-index: 1;
 }
 
-.project-popup {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    pointer-events: none;
-}
-
-.project-popup.active {
-    display: block;
-    pointer-events: auto;
-}
-
 .popup-content {
-    background: rgba(255, 255, 255, 0.7); /* 70% opacity */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Blur effect */
     padding: 40px 50px;
-    border: 1px solid rgba(150, 150, 150, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     width: 300px;
     position: relative;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     pointer-events: auto;
+    box-shadow: none; /* Remove shadow */
 }
 
 .close-popup {
@@ -279,18 +268,18 @@ body {
     top: 15px;
     right: 20px;
     font-size: 28px;
-    color: #ffffff;
+    color: white;
     cursor: pointer;
     transition: color 0.3s;
     font-weight: 300;
 }
 
 .close-popup:hover {
-    color: #00000053;
+    color: #d70000;
 }
 
 .popup-content h2 {
-    color: #000;
+    color: white; /* Changed to white for dark background */
     font-size: 18px;
     letter-spacing: 1px;
     margin-bottom: 30px;
@@ -298,14 +287,8 @@ body {
     font-weight: normal;
 }
 
-#popup-projects {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
 .popup-project-item {
-    color: #000;
+    color: white; /* Changed to white */
     text-decoration: none;
     padding: 12px 15px;
     border: none;
@@ -317,7 +300,8 @@ body {
 }
 
 .popup-project-item:hover {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
 #lines {
