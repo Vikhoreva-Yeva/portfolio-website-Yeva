@@ -1,65 +1,62 @@
 @media (max-width: 768px) {
-    /* CONTAINER - Full screen sections */
+    /* CLEAN MINIMAL MOBILE */
     #container {
         height: auto;
-        min-height: 100vh;
-        padding: 40px 0;
+        padding: 0;
     }
 
-    /* WORDS - Hide or minimize on mobile for cleaner look */
     .word {
         font-size: 10px;
-        opacity: 0.6;
+        opacity: 0.5;
     }
 
     .scroll-hint {
-        display: none; /* Hide on mobile */
+        font-size: 10px;
     }
 
-    /* HEADER */
+    /* HEADER - Simple */
     header {
-        padding: 20px 20px;
+        padding: 20px;
         width: 100%;
-        flex-direction: row;
         gap: 0;
     }
 
     .logo {
         font-size: 12px;
-        margin-bottom: 0;
     }
 
     nav {
-        display: none; /* Hide nav, keep only logo */
+        display: none;
     }
 
-    /* PROJECTS - Card layout */
+    /* PROJECTS - Full screen vertical */
     .projects-section {
         margin-top: 0;
-        padding: 0 15px;
+        padding: 0;
     }
 
     .project {
-        padding: 30px 0;
+        padding: 0;
         min-height: auto;
-        margin-bottom: 40px;
+        margin-bottom: 0;
     }
 
     .project h2 {
-        font-size: 22px;
-        margin-bottom: 20px;
+        font-size: 18px;
+        padding: 30px 20px 15px 20px;
+        margin-bottom: 0;
         text-align: left;
+        letter-spacing: 2px;
     }
 
-    /* PROJECT IMAGE - Full width card */
+    /* IMAGE - Full width, landscape */
     .project-image {
-        width: 100%;
+        width: 100vw;
         height: 50vh;
         aspect-ratio: auto;
-        background: #1a1a1a;
-        margin-bottom: 25px;
-        border-radius: 8px;
-        overflow: hidden;
+        position: relative;
+        margin: 0;
+        border-radius: 0;
     }
 
     .project-image img {
@@ -75,91 +72,104 @@
     }
 
     .tag {
-        font-size: 12px;
-        padding: 5px 10px;
-        background: rgba(0, 0, 0, 0.8);
+        font-size: 11px;
+        padding: 4px 8px;
+        background: rgba(0, 0, 0, 0.75);
     }
 
-    /* PROJECT INFO - Below image */
+    /* TEXT - Below image, clean */
     .project-info {
-        padding: 0;
-        background: transparent;
+        padding: 30px 20px;
+        background: black;
+        margin: 0;
     }
 
     .project-info h1 {
-        display: none; /* Title already shown above */
+        display: none;
     }
 
     .project-description {
         max-width: 100%;
+        gap: 15px;
     }
 
     .project-description p {
-        font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 15px;
+        font-size: 13px;
+        line-height: 1.7;
+        color: #aaa;
+        margin: 0;
     }
 
-    /* GALLERY */
+    .contact-button {
+        margin-top: 20px;
+        font-size: 12px;
+        padding: 8px 15px;
+        border: 1px solid white;
+    }
+
+    /* GALLERY IMAGES - Full screen */
     .project-gallery {
-        margin-top: 30px;
+        padding: 0;
+        margin: 0;
     }
 
     .project-gallery img,
     .project-gallery video,
     .project-gallery iframe {
-        width: 100%;
+        width: 100vw;
         height: 50vh;
-        margin: 20px 0;
-        border-radius: 8px;
+        margin: 0;
+        border-radius: 0;
     }
 
-    /* ABOUT/CONTACTS - Clean cards */
+    /* ABOUT/CONTACTS */
     .about-section,
     .contacts-section {
         padding: 40px 20px;
-    }
-
-    .about-content,
-    .contacts-content {
-        max-width: 100%;
-        padding: 0;
+        min-height: 100vh;
     }
 
     .about-content h2,
     .contacts-content h2 {
-        font-size: 24px;
-        margin-bottom: 25px;
-        text-align: left;
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
     }
 
     .about-text p,
     .contact-info p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.7;
     }
 
     .contact-info {
-        gap: 20px;
         text-align: left;
     }
 
     /* POPUP */
     .popup-content {
-        width: 90vw;
-        max-width: 300px;
-        padding: 25px 20px;
+        width: 85vw;
+        max-width: 290px;
+        padding: 20px;
+    }
+
+    .popup-project-item {
+        font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
     .project h2 {
-        font-size: 20px;
+        font-size: 16px;
+        padding: 25px 15px 12px 15px;
     }
 
     .project-image {
         height: 45vh;
-        border-radius: 6px;
+    }
+
+    .project-info {
+        padding: 25px 15px;
     }
 
     .project-gallery img,
@@ -168,15 +178,23 @@
         height: 45vh;
     }
 
-    .about-content h2,
-    .contacts-content h2 {
-        font-size: 20px;
+    .about-section,
+    .contacts-section {
+        padding: 30px 15px;
     }
 
-    #container {
-        padding: 30px 0;
+    .about-content h2,
+    .contacts-content h2 {
+        font-size: 16px;
     }
-}.noselect {
+
+    .about-text p,
+    .contact-info p {
+        font-size: 12px;
+    }
+}
+
+.noselect {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
@@ -560,4 +578,200 @@ nav a:hover {
     display: block;
     margin: 40px 0;
     border: none;
+}
+
+@media (max-width: 768px) {
+    /* CLEAN MINIMAL MOBILE */
+    #container {
+        height: auto;
+        padding: 0;
+    }
+
+    .word {
+        font-size: 10px;
+        opacity: 0.5;
+    }
+
+    .scroll-hint {
+        font-size: 10px;
+    }
+
+    /* HEADER - Simple */
+    header {
+        padding: 20px;
+        width: 100%;
+        gap: 0;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* PROJECTS - Full screen vertical */
+    .projects-section {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .project {
+        padding: 0;
+        min-height: auto;
+        margin-bottom: 0;
+    }
+
+    .project h2 {
+        font-size: 18px;
+        padding: 30px 20px 15px 20px;
+        margin-bottom: 0;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+
+    /* IMAGE - Full width, landscape */
+    .project-image {
+        width: 100vw;
+        height: 50vh;
+        aspect-ratio: auto;
+        position: relative;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-tags {
+        top: 15px;
+        left: 15px;
+        gap: 8px;
+    }
+
+    .tag {
+        font-size: 11px;
+        padding: 4px 8px;
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+    /* TEXT - Below image, clean */
+    .project-info {
+        padding: 30px 20px;
+        background: black;
+        margin: 0;
+    }
+
+    .project-info h1 {
+        display: none;
+    }
+
+    .project-description {
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .project-description p {
+        font-size: 13px;
+        line-height: 1.7;
+        color: #aaa;
+        margin: 0;
+    }
+
+    .contact-button {
+        margin-top: 20px;
+        font-size: 12px;
+        padding: 8px 15px;
+        border: 1px solid white;
+    }
+
+    /* GALLERY IMAGES - Full screen */
+    .project-gallery {
+        padding: 0;
+        margin: 0;
+    }
+
+    .project-gallery img,
+    .project-gallery video,
+    .project-gallery iframe {
+        width: 100vw;
+        height: 50vh;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    /* ABOUT/CONTACTS */
+    .about-section,
+    .contacts-section {
+        padding: 40px 20px;
+        min-height: 100vh;
+    }
+
+    .about-content h2,
+    .contacts-content h2 {
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    .about-text p,
+    .contact-info p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+
+    /* POPUP */
+    .popup-content {
+        width: 85vw;
+        max-width: 290px;
+        padding: 20px;
+    }
+
+    .popup-project-item {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project h2 {
+        font-size: 16px;
+        padding: 25px 15px 12px 15px;
+    }
+
+    .project-image {
+        height: 45vh;
+    }
+
+    .project-info {
+        padding: 25px 15px;
+    }
+
+    .project-gallery img,
+    .project-gallery video,
+    .project-gallery iframe {
+        height: 45vh;
+    }
+
+    .about-section,
+    .contacts-section {
+        padding: 30px 15px;
+    }
+
+    .about-content h2,
+    .contacts-content h2 {
+        font-size: 16px;
+    }
+
+    .about-text p,
+    .contact-info p {
+        font-size: 12px;
+    }
 }
