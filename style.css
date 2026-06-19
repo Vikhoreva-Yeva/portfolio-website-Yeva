@@ -1,4 +1,18 @@
 @media (max-width: 768px) {
+    /* WORDS - Much smaller on mobile */
+    .word {
+        font-size: 11px !important;
+    }
+
+    .word:hover {
+        transform: scale(1.2); /* Less scale on mobile */
+    }
+
+    .scroll-hint {
+        font-size: 11px;
+        bottom: 20px;
+    }
+
     /* HEADER */
     header {
         padding: 15px 20px;
@@ -13,61 +27,49 @@
         font-size: 8px;
     }
 
-    /* WORDS/FLOATING NETWORK */
-    .word {
-        font-size: 14px;
-    }
-
-    .scroll-hint {
-        font-size: 12px;
-        bottom: 20px;
-    }
-
     /* PROJECTS */
     .project {
         padding: 10px;
         min-height: auto;
-        padding-top: 80px;
+        padding-top: 100px;
     }
 
     .project h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 
     .project-image {
         width: 95%;
-        height: 50vh;
-        aspect-ratio: auto;
+        height: 45vh;
     }
 
     .project-tags {
         top: 10px;
         left: 10px;
+        gap: 3px;
     }
 
     .tag {
-        font-size: 12px;
-        padding: 2px 6px;
+        font-size: 11px;
+        padding: 2px 5px;
     }
 
     /* GALLERY */
     .project-gallery img,
     .project-gallery video,
     .project-gallery iframe {
-        width: 100vw;
-        max-height: 60vh;
-        height: 60vh;
-        margin: 15px 0;
+        height: 50vh;
+        margin: 10px 0;
     }
 
-    /* INFO SECTION */
+    /* INFO */
     .project-info {
-        padding: 40px 5%;
+        padding: 30px 5%;
     }
 
     .project-info h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .project-description p {
@@ -75,56 +77,34 @@
     }
 
     /* ABOUT/CONTACTS */
-    .about-content,
-    .contacts-content {
-        padding: 0 10px;
-    }
-
     .about-content h2,
     .contacts-content h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .about-text p,
     .contact-info p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     /* POPUP */
     .popup-content {
-        width: 280px;
-        padding: 30px 25px;
-    }
-
-    .popup-content h2 {
-        font-size: 16px;
+        width: 270px;
+        padding: 25px 20px;
     }
 
     .popup-project-item {
-        font-size: 13px;
-        padding: 10px 12px;
-    }
-
-    /* NAVIGATION ARROWS */
-    .nav-arrow {
-        font-size: 24px;
-        padding: 5px 10px;
+        font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
-    /* Extra small phones */
-    
-    header {
-        padding: 10px 15px;
-    }
-
-    .logo {
-        font-size: 10px;
-    }
-
     .word {
-        font-size: 12px;
+        font-size: 9px !important;
+    }
+
+    .word:hover {
+        transform: scale(1.1);
     }
 
     .project-image {
@@ -135,24 +115,18 @@
     .project-gallery img,
     .project-gallery video,
     .project-gallery iframe {
-        height: 50vh;
-    }
-
-    .project-info {
-        padding: 30px 5%;
+        height: 45vh;
     }
 
     .popup-content {
         width: 260px;
-        padding: 25px 20px;
+        padding: 20px 15px;
     }
 
     .nav-arrow {
-        font-size: 20px;
-        padding: 3px 8px;
+        font-size: 18px;
     }
-}
-.noselect {
+}.noselect {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
