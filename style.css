@@ -1,134 +1,182 @@
 @media (max-width: 768px) {
-    /* WORDS - Much smaller on mobile */
-    .word {
-        font-size: 11px !important;
+    /* CONTAINER - Full screen sections */
+    #container {
+        height: auto;
+        min-height: 100vh;
+        padding: 40px 0;
     }
 
-    .word:hover {
-        transform: scale(1.2); /* Less scale on mobile */
+    /* WORDS - Hide or minimize on mobile for cleaner look */
+    .word {
+        font-size: 10px;
+        opacity: 0.6;
     }
 
     .scroll-hint {
-        font-size: 11px;
-        bottom: 20px;
+        display: none; /* Hide on mobile */
     }
 
     /* HEADER */
     header {
-        padding: 15px 20px;
-        gap: 10px;
+        padding: 20px 20px;
+        width: 100%;
+        flex-direction: row;
+        gap: 0;
     }
 
     .logo {
-        font-size: 11px;
+        font-size: 12px;
+        margin-bottom: 0;
     }
 
-    nav a {
-        font-size: 8px;
+    nav {
+        display: none; /* Hide nav, keep only logo */
     }
 
-    /* PROJECTS */
+    /* PROJECTS - Card layout */
+    .projects-section {
+        margin-top: 0;
+        padding: 0 15px;
+    }
+
     .project {
-        padding: 10px;
+        padding: 30px 0;
         min-height: auto;
-        padding-top: 100px;
+        margin-bottom: 40px;
     }
 
     .project h2 {
-        font-size: 20px;
-        margin-bottom: 15px;
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: left;
     }
 
+    /* PROJECT IMAGE - Full width card */
     .project-image {
-        width: 95%;
-        height: 45vh;
+        width: 100%;
+        height: 50vh;
+        aspect-ratio: auto;
+        background: #1a1a1a;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .project-tags {
-        top: 10px;
-        left: 10px;
-        gap: 3px;
+        top: 15px;
+        left: 15px;
+        gap: 8px;
     }
 
     .tag {
-        font-size: 11px;
-        padding: 2px 5px;
+        font-size: 12px;
+        padding: 5px 10px;
+        background: rgba(0, 0, 0, 0.8);
     }
 
-    /* GALLERY */
-    .project-gallery img,
-    .project-gallery video,
-    .project-gallery iframe {
-        height: 50vh;
-        margin: 10px 0;
-    }
-
-    /* INFO */
+    /* PROJECT INFO - Below image */
     .project-info {
-        padding: 30px 5%;
+        padding: 0;
+        background: transparent;
     }
 
     .project-info h1 {
-        font-size: 20px;
+        display: none; /* Title already shown above */
+    }
+
+    .project-description {
+        max-width: 100%;
     }
 
     .project-description p {
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
     }
 
-    /* ABOUT/CONTACTS */
+    /* GALLERY */
+    .project-gallery {
+        margin-top: 30px;
+    }
+
+    .project-gallery img,
+    .project-gallery video,
+    .project-gallery iframe {
+        width: 100%;
+        height: 50vh;
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+
+    /* ABOUT/CONTACTS - Clean cards */
+    .about-section,
+    .contacts-section {
+        padding: 40px 20px;
+    }
+
+    .about-content,
+    .contacts-content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about-content h2,
+    .contacts-content h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    .about-text p,
+    .contact-info p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .contact-info {
+        gap: 20px;
+        text-align: left;
+    }
+
+    /* POPUP */
+    .popup-content {
+        width: 90vw;
+        max-width: 300px;
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project h2 {
+        font-size: 20px;
+    }
+
+    .project-image {
+        height: 45vh;
+        border-radius: 6px;
+    }
+
+    .project-gallery img,
+    .project-gallery video,
+    .project-gallery iframe {
+        height: 45vh;
+    }
+
     .about-content h2,
     .contacts-content h2 {
         font-size: 20px;
     }
 
-    .about-text p,
-    .contact-info p {
-        font-size: 13px;
+    #container {
+        padding: 30px 0;
     }
-
-    /* POPUP */
-    .popup-content {
-        width: 270px;
-        padding: 25px 20px;
-    }
-
-    .popup-project-item {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .word {
-        font-size: 9px !important;
-    }
-
-    .word:hover {
-        transform: scale(1.1);
-    }
-
-    .project-image {
-        width: 100%;
-        height: 40vh;
-    }
-
-    .project-gallery img,
-    .project-gallery video,
-    .project-gallery iframe {
-        height: 45vh;
-    }
-
-    .popup-content {
-        width: 260px;
-        padding: 20px 15px;
-    }
-
-    .nav-arrow {
-        font-size: 18px;
-    }
-}
-
-.noselect {
+}.noselect {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
