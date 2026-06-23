@@ -249,7 +249,7 @@ body {
 .word {
     position: fixed;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
     pointer-events: auto;
